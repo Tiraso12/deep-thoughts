@@ -34,7 +34,7 @@ const ThoughtList = ({ thoughts, title }) => {
           </div>
         ))}
     </div>
-  )
-}
+  );
+};
 
 export default ThoughtList;
