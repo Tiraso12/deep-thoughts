@@ -24,9 +24,9 @@ const Login = (props) => {
 
     try {
       const { data } = await login({
-        variables: { ...formState }
+        variables: { ...formState },
       });
-  
+
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
@@ -68,6 +68,7 @@ const Login = (props) => {
                 Submit
               </button>
             </form>
+
             {error && <div>Login failed</div>}
           </div>
         </div>
